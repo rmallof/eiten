@@ -25,6 +25,32 @@ the raw portfolios without any filtering. As for the other question, the weights
 money that you should put in each stock. If a weight is negative, that means just short with that proportion. 
 You can simply normalize the weights to sum up to one if it's harder to read them without them being normalized.
 """
+
+"""
+https://github.com/tradytics/eiten/issues/2#issuecomment-690298456
+
+So reading that correctly let's say I put in 5 stocks and get the following weights:
+
+A: 0.5
+B: 1.0
+C: -1.0
+D: 2.0
+E: 0.5
+If I am long-only I can throw away C, it shouldn't be in my portfolio at all. So if I normalize the weights:
+
+A: 0.125
+B: 0.25
+(no C)
+D: 0.5
+E: 0.125
+So for a $1000 portfolio that would be:
+
+A: $125
+B: $250
+D: $500
+E: $125
+
+"""
 def main():
 
     argParser = argparse.ArgumentParser()
