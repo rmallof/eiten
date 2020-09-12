@@ -19,7 +19,7 @@
     {
         "comm": "--future_bars",
         "type": "int",
-        "default": "540",
+        "default": "90",
         "help": "How many bars to keep for testing purposes."
     },
     {
